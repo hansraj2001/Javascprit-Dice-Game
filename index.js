@@ -14,5 +14,5 @@ rollButton.addEventListener("click", function() {
   // Set a delay of 4 seconds before displaying the value
   setTimeout(function() {
     dice.textContent = randomNumber;
-  }, 800);
+  }, 500);
 });
