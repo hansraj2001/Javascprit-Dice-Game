@@ -1,5 +1,6 @@
 const dice = document.getElementById("dice");
 const rollButton = document.getElementById("roll-button");
+const diceRollSound = document.getElementById('dice-roll-sound');
 
 rollButton.addEventListener("click", function() {
   // Generate a random number between 1 and 6 (inclusive)
@@ -15,4 +16,9 @@ rollButton.addEventListener("click", function() {
   setTimeout(function() {
     dice.textContent = randomNumber;
   }, 500);
+});
+
+rollButton.addEventListener('click', function() {
+  diceRollSound.currentTime = 0;
+  diceRollSound.play();
 });
